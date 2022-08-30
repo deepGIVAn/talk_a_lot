@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: center / cover no-repeat url('back.jpg'); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+section.chat_section {
+    width: 88vw;
+    max-width: 95%;
+    background-color:rgba(0,170,251,0.9);
+    /* box-shadow: 0 10px 15px -3px rgba(0,0,0,-0.1), 0 4px 6px -2px rgba(0,0,0,-0.05); */
+}
+
+.brand {
+    padding: 0.7rem;
+    background:rgba(0,0,0,0.87);
+    display: flex;
+    align-items: center;
+}
+/* 
+.brand img {
+    width: 3rem;
+    height: 3rem;
+    filter: invert(0.7);
+}
+ */
+.brand h1 {
+    text-transform:capitalize;  /* uppercase */
+    font-size: 2.5rem;
+    color:white;
+    margin-right: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.brand .button {
+    text-decoration: none;
+    margin-left: auto;
+    color:rgba(0,0,0,0.8);
+    font-size: 1.7rem;
+    font-weight: bolder;
+    background-color: white;
+    border: 2px solid black;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.message_area {
+    height: 65vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;       /* so that scrollbar get created when we have so much messages .. */
+}
+
+.type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    border-radius: 2rem;
+    width: 88%;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    /* background: #FBFBFB; */
+    background-color: rgba(0,0,0,0.8);
+    color: #FBFBFB;
+    margin-bottom: 0%;
+    resize: none;
+}
+
+.btn {
+    border-radius: 3rem;
+    width: 12%;
+    border: none;
+    padding: 1rem 0.4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    /* background: #FBFBFB; */
+    background-color: rgb(0,0,0);
+    color: #FBFBFB;
+    margin-bottom: 0%;
+
+}
+
+.message {
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    margin-bottom: 1.5rem;
+    max-width: 35vw;
+    position: relative;
+}
+
+.say {
+    font-weight: bold;
+    padding: 0.2rem 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #FBFBFB;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.incoming {
+    background-color: black;
+    color: #FBFBFB;
+    margin-right: auto;
+}
+
+.outgoing {
+    background-color: rgba(0,0,0,0.65);
+    color:#FBFBFB;
+    margin-left: auto;
+}
+
+.message h4 {
+    position: absolute;
+    top: -1rem;
+    left:0;
+    color: #FBFBFB;
+    font-size: 0.9rem;
+}
